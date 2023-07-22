@@ -31,17 +31,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\IntelliJ IDEA\apache-maven-3.8.7-bin\maven\repository" />
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/apache-maven-3.8.7-bin/apache-maven-3.8.7" />
         <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="E:\IntelliJ IDEA\apache-maven-3.8.7-bin\apache-maven-3.8.7\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="native" />
-        <option value="nativeTest" />
-      </list>
     </option>
   </component>
   <component name="MavenRunner">
@@ -75,7 +68,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "98cf41836aed02d1d7371d6e8347149b",
     "ts.external.directory.path": "E:\\IntelliJ IDEA\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -253,7 +246,9 @@
       <workItem from="1689996092484" duration="65000" />
       <workItem from="1689997747238" duration="2160000" />
       <workItem from="1690007926165" duration="648000" />
-      <workItem from="1690013363019" duration="1837000" />
+      <workItem from="1690013363019" duration="1925000" />
+      <workItem from="1690015299567" duration="31000" />
+      <workItem from="1690015340700" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="init stock-analysis-system">
       <option name="closed" value="true" />
@@ -271,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690014690863</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init stock-analysis-system">
+      <option name="closed" value="true" />
+      <created>1690015263104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690015263104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
