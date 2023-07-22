@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登陆</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("img.png");
+            background-repeat: revert;
+        }
+
+        #app {
+            display: flex;
+
+        }
+
+        .bottom-left {
+            color: #fff;
+            font-size: 15px;
+            opacity: .54;
+            margin-top: 850px;
+            margin-left: 70px;
+        }
+
+        .bottom-left a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .left-title {
+            margin-left: 100px;
+            margin-top: 250px;
+            color: white;
+        }
+
+        .left-title h3 {
+            font-size: 54px;
+        }
+
+        .left-title p {
+            line-height: 70px;
+            font-size: 32px;
+        }
+
+        .app-box {
+            margin-left: 650px;
+            margin-top: 130px;
+            height: 600px;
+            width: 480px;
+            background-color: #fff;
+            opacity: 0.9;
+            border-radius: 15px;
+        }
+
+        .app-box h1 {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-left: 45px;
+        }
+
+        .from-box {
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+
+        .from-box label {
+            font-size: 18px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: right;
+            width: 82px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 15px;
+            font-weight: 200;
+            display: block;
+            float: left;
+
+            margin-bottom: 30px;
+
+        }
+
+        .from-box input {
+            padding: 11px 10px;
+            max-height: 40px;
+            background: #fff;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 311px;
+            color: #000;
+            transition: .3s;
+
+            margin-bottom: 30px;
+
+        }
+
+        .from-box button {
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 0;
+            font-size: 20px;
+            width: 399px;
+            height: 50px;
+            background: #BDCEFC;
+            border-radius: 25px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .from-box button:hover {
+            background: #c1bdfc;
+
+        }
+
+        .a-box {
+            margin-left: 125px;
+            margin-top: 40px;
+        }
+
+        .a-box a {
+            padding-right: 50px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .a-box a:hover {
+            text-decoration: underline;
+        }
+
+        .text-readed {
+            margin-top: 33px;
+            text-align: center;
+        }
+
+        .text-readed a {
+            text-decoration: none;
+        }
+
+        .text-readed a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <div class="bottom-left">
+        <span>
+            <a href="https://passport.baidu.com/v2/?ucenterfeedback#reg">帮助中心&nbsp;&nbsp;</a>
+        </span>
+        <span>|</span>
+        <span>&nbsp;&nbsp;2023&nbsp;&nbsp;©Qifei</span>
+    </div>
+    <div class="left-title">
+        <h3>用科技</h3>
+        <p>让复杂的世界更简单</p>
+    </div>
+    <div class="app-box">
+        <div class="title">
+            <h1>用户登陆</h1>
+        </div>
+        <div class="from-box">
+            <form @submit.prevent="login">
+                <label for="username">用户名</label>
+                <input type="text" id="username" v-model="loginData.username" placeholder=" 用户名/手机号"><br><br>
+                <label for="password">密&nbsp;&nbsp;&nbsp;码</label>
+                <input type="password" id="password" v-model="loginData.password" placeholder=" 密码"><br><br>
+                <button type="submit">登陆</button>
+            </form>
+        </div>
+        <div class="a-box">
+            <a href="http://localhost:8080/forgotPassword.html">忘记密码</a>
+            <a href="http://localhost:8080/register.html">立即注册</a>
+        </div>
+        <div class="text-readed">
+            <p>
+                <input type="checkbox" v-model="readed">
+                <label>&nbsp;&nbsp;阅读并接受</label><a href="">&nbsp;《股市用户协议》</a>&nbsp;、<a
+                    href="">《个人信息保护声明》</a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;及</span>
+                <a href="">《隐私权保护声明》</a><span></span>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            loginData: {
+                username: '',
+                password: ''
+            },
+            readed: false,
+            token: ''
+        },
+        methods: {
+            login: function () {
+                if (this.readed === false) {
+                    alert("请勾选用户协议!");
+                } else {
+                    // 通过登陆接口进行验证
+                    axios.post("http://localhost:8080/login", {
+                        username: this.loginData.username,
+                        password: this.loginData.password
+                    }).then(
+                        (response) => {
+                            if (response.data.code === 1) {
+                                alert("登陆成功！")
+                                this.token = response.data.data;
+                                window.location.href = "mainPage.html"
+                            } else {
+                                alert("登陆失败！用户名或密码错误！")
+                                console.log(response)
+                            }
+                        }
+                    )
+                }
+
+            }
+        }
+    });
+</script>
+</body>
+</html>

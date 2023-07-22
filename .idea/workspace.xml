@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0cb5001-da9e-4e2b-8dbc-790f86f1615f" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Vue Options API Component" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\IntelliJ IDEA\apache-maven-3.8.7-bin\maven\repository" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/apache-maven-3.8.7-bin/apache-maven-3.8.7" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\IntelliJ IDEA\apache-maven-3.8.7-bin\apache-maven-3.8.7\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="native" />
+        <option value="nativeTest" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2S5faWJlAE4VAq76KQCWkv4fMUT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "E:/IntelliJ IDEA/Project/Stock_analysis_system/src/main/resources/static/vue/utils",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "spring.configuration.checksum": "98cf41836aed02d1d7371d6e8347149b",
+    "ts.external.directory.path": "E:\\IntelliJ IDEA\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ],
+    "vue.recent.templates": [
+      "Vue Options API Component"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Project\Stock_analysis_system\src\main\resources\static\vue\utils" />
+      <recent name="E:\IntelliJ IDEA\Project\Stock_analysis_system" />
+      <recent name="E:\IntelliJ IDEA\Project\Stock_analysis_system\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA\Project\Stock_analysis_system\src\main\resources\static\js\vue\public" />
+      <recent name="E:\IntelliJ IDEA\Project\Stock_analysis_system\src\main\resources\static\js" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hjw" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hjw.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="StockAnalysisSystemApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Stock_analysis_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hjw.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hjw" />
+      <option name="MAIN_CLASS_NAME" value="com.hjw.StockAnalysisSystemApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockAnalysisSystemApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Stock_analysis_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hjw" />
+      <option name="MAIN_CLASS_NAME" value="com.hjw.StockAnalysisSystemApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockAnalysisSystemApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Stock_analysis_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hjw" />
+      <option name="MAIN_CLASS_NAME" value="com.hjw.StockAnalysisSystemApplicationTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Stock_analysis_system/static/mainPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="system-parent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjw.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hjw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StockAnalysisSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Stock_analysis_system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjw.StockAnalysisSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.StockAnalysisSystemApplicationTests.test1" />
+        <item itemvalue="JUnit.StockAnalysisSystemApplicationTests.test" />
+        <item itemvalue="JavaScript 调试.mainPage.html" />
+        <item itemvalue="JUnit.StockAnalysisSystemApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e0cb5001-da9e-4e2b-8dbc-790f86f1615f" name="更改" comment="" />
+      <created>1688441428336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688441428336</updated>
+      <workItem from="1688441429351" duration="11071000" />
+      <workItem from="1688459859730" duration="2059000" />
+      <workItem from="1688517559388" duration="605000" />
+      <workItem from="1689001166639" duration="4813000" />
+      <workItem from="1689054515987" duration="2464000" />
+      <workItem from="1689057688471" duration="6598000" />
+      <workItem from="1689081229108" duration="4028000" />
+      <workItem from="1689127665499" duration="25000" />
+      <workItem from="1689133697493" duration="2380000" />
+      <workItem from="1689144901715" duration="68000" />
+      <workItem from="1689144986321" duration="965000" />
+      <workItem from="1689146337535" duration="73000" />
+      <workItem from="1689146420638" duration="5116000" />
+      <workItem from="1689153241884" duration="18000" />
+      <workItem from="1689167318573" duration="172000" />
+      <workItem from="1689167541821" duration="1341000" />
+      <workItem from="1689214916215" duration="132000" />
+      <workItem from="1689220247983" duration="2043000" />
+      <workItem from="1689253493590" duration="1242000" />
+      <workItem from="1689300875409" duration="88000" />
+      <workItem from="1689304224794" duration="27000" />
+      <workItem from="1689306012961" duration="20148000" />
+      <workItem from="1689349106189" duration="2574000" />
+      <workItem from="1689383141456" duration="29037000" />
+      <workItem from="1689432641011" duration="1207000" />
+      <workItem from="1689475073841" duration="49000" />
+      <workItem from="1689564856207" duration="2411000" />
+      <workItem from="1689567638579" duration="2559000" />
+      <workItem from="1689598725430" duration="2865000" />
+      <workItem from="1689605299348" duration="3240000" />
+      <workItem from="1689649959483" duration="987000" />
+      <workItem from="1689651030021" duration="1002000" />
+      <workItem from="1689652039213" duration="1734000" />
+      <workItem from="1689669607798" duration="37000" />
+      <workItem from="1689678050622" duration="5468000" />
+      <workItem from="1689735453065" duration="28000" />
+      <workItem from="1689749494309" duration="1396000" />
+      <workItem from="1689756396055" duration="881000" />
+      <workItem from="1689757298299" duration="2533000" />
+      <workItem from="1689772448515" duration="3352000" />
+      <workItem from="1689777299651" duration="1630000" />
+      <workItem from="1689778950176" duration="269000" />
+      <workItem from="1689779308233" duration="28000" />
+      <workItem from="1689779419070" duration="14000" />
+      <workItem from="1689934142360" duration="6667000" />
+      <workItem from="1689952013069" duration="1650000" />
+      <workItem from="1689993399176" duration="89000" />
+      <workItem from="1689993498690" duration="261000" />
+      <workItem from="1689993772275" duration="1510000" />
+      <workItem from="1689996092484" duration="65000" />
+      <workItem from="1689997747238" duration="2160000" />
+      <workItem from="1690007926165" duration="648000" />
+      <workItem from="1690013363019" duration="1043000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

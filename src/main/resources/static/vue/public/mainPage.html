@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(235, 239, 240);
+        }
+
+        .flex-box {
+            display: flex;
+            height: 70px;
+            background-color: rgba(233, 18, 41) !important;
+
+        }
+
+        .flex-title {
+            width: 700px;
+            color: rgb(255, 231, 240);
+            line-height: 70px;
+            text-align: center;
+            font-size: 40px;
+
+
+        }
+
+        .btn_switch {
+            width: 1050px;
+        }
+
+        .btn_switch button {
+            border: 0;
+            /*清除默认背景 */
+            background-color: transparent;
+            color: rgb(255, 231, 240);
+            font-size: 24px;
+            padding: 19px 19px;
+        }
+
+
+        h1 {
+            padding-top: 30px;
+            margin-left: 200px;
+            margin-bottom: 40px;
+        }
+
+        .winners-list {
+            background-color: rgb(235, 239, 240);
+        }
+
+
+        .winners-list table {
+            /*display: flex;*/
+            /*justify-content: space-evenly;*/
+            table-layout: fixed;
+            background-color: white;
+            text-align: center;
+            color: rgb(68, 68, 68);
+        }
+
+
+        .table-list th a {
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+        }
+
+        .table-list th :hover {
+            text-decoration: underline;
+        }
+
+        td {
+            padding: 10px 3px;
+            width: 94px;
+        }
+
+        th {
+            padding: 18px 3px;
+        }
+
+        td a {
+            color: #528fcc;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .m-pager {
+            line-height: 55px;
+            height: 55px;
+        }
+
+        .m-pager a {
+            color: #528fcc;
+            text-decoration: none;
+        }
+
+        .cur {
+            background-color: #eee;
+        }
+
+        .m-pager a:hover {
+            color: #d75442;
+            border-radius: 2px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .app-box {
+            width: 1350px;
+            margin-left: 235px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .cur-anniu {
+            background-color: rgb(199, 0, 1) !important;
+        }
+
+        .btn_switch button:hover {
+            background-color: rgb(199, 0, 1);
+        }
+
+        .cur-page {
+            background-color: rgb(238, 238, 238) !important;
+
+        }
+
+        .table-list tbody tr td a {
+            color: #528fcc;
+        }
+
+        .earn-color {
+            color: #d75442 !important;
+        }
+
+        .notNegative {
+            color: #59b881 !important;
+        }
+
+        .search-form {
+            margin-left: 300px;
+        }
+
+        .search-form input:nth-child(1) {
+            width: 1100px;
+            height: 30px;
+            padding: 12px 16px;
+            font-size: 16px;
+            margin: 0;
+            vertical-align: top;
+            outline: 0;
+            box-shadow: none;
+            border-radius: 10px 0 0 10px;
+            border: 2px solid #c4c7ce;
+            background: #fff;
+            color: #222;
+            overflow: hidden;
+            box-sizing: content-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .search-form button {
+            border: 0;
+            font-size: 20px;
+            width: 60px;
+            height: 58px;
+            border-radius: 0 10px 10px 0;
+
+            background: #BDCEFC;
+            color: rgba(255, 255, 255, 1);
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="app" v-cloak>
+    <div class="flex-box">
+        <div class="flex-title">基本大数据的股票分析系统</div>
+        <div class="btn_switch">
+            <button :class="number===1?'cur-anniu':''" @click="change(1)">最新龙虎榜排行</button>
+            <button :class="number===2?'cur-anniu':''" @click="change(2)">市场大盘行情</button>
+            <button :class="number===3?'cur-anniu':''" @click="change(3)">股票诊断分析</button>
+            <button :class="number===4?'cur-anniu':''" @click="change(4)">股票对比分析</button>
+            <button :class="number===5?'cur-anniu':''" @click="change(5)">自选股票列表</button>
+        </div>
+    </div>
+    <div class="body">
+        <div v-show="1===number" class="winners-list">
+            <h1>最新龙虎榜排行榜：</h1>
+            <div class="app-box">
+                <table class="table-list">
+                    <thead>
+                    <tr>
+                        <th style="width: 46px;">序号</th>
+                        <th style="width: 68px;">代码</th>
+                        <th style="width: 91px;">名称</th>
+                        <th style="width: 68px;"><a href="  " field="xj">现价</a></th>
+                        <th style="width: 91px;"><a href="  " field="zdf">涨跌幅(%) </a></th>
+                        <th style="width: 68px;"><a href="  " field="zd">涨跌 </a></th>
+                        <th style="width: 91px;"><a href="  " field="zs">涨速(%) </a></th>
+                        <th style="width: 91px;"><a href="  " field="hs">换手(%) </a></th>
+                        <th style="width: 69px;"><a href="  " field="lb">量比 </a></th>
+                        <th style="width: 69px;"><a href="  " field="zf">振幅(%) </a></th>
+                        <th style="width: 80px;"><a href="  " field="cje">成交额 </a></th>
+                        <th style="width: 91px;"><a href="  " field="ltg">流通股 </a></th>
+                        <th style="width: 91px;"><a href="  " field="ltsz">流通市值 </a></th>
+                        <th style="width: 80px;"><a href="  " field="syl">市盈率 </a></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="item in listData">
+                        <td>{{ item.id }}</td>
+                        <td><a href="javascript:;" @click="forward(item.stockId)">{{ item.stockId }}</a></td>
+                        <td><a href="javascript:;" @click="forward(item.stockId)">{{ item.name }}</a></td>
+                        <td class="earn-color">{{ item.price }}</td>
+                        <td class="earn-color">{{ item.priceLimit }}</td>
+                        <td class="earn-color">{{ item.upDown }}</td>
+                        <td :class="item.acceleration > 0?'earn-color':(item.acceleration == 0?'':'notNegative')">
+                            {{ item.acceleration }}
+                        </td>
+                        <td>{{ item.turnover }}</td>
+                        <td class="earn-color">{{ item.volume }}</td>
+                        <td class="earn-color">{{ item.amplitude }}</td>
+                        <td>{{ item.volumeBusiness }}</td>
+                        <td>{{ item.marketQuantity }}</td>
+                        <td>{{ item.marketValue }}</td>
+                        <td>{{ item.earningsRatio }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="m-pager" id="m-page">
+                    <a :class="page===1?'cur-page':''" @click="changePage(1)" href="javascript:;">1</a>&nbsp;&nbsp;
+                    <a :class="page===2?'cur-page':''" @click="changePage(2)" href="javascript:;">2</a>&nbsp;&nbsp;
+                    <a :class="page===3?'cur-page':''" @click="changePage(3)" href="javascript:;">3</a>&nbsp;&nbsp;
+                    <a :class="page===4?'cur-page':''" @click="changePage(4)" href="javascript:;">4</a>&nbsp;&nbsp;
+                    <a :class="page===5?'cur-page':''" @click="changePage(5)" href="javascript:;">5</a>&nbsp;&nbsp;
+                    <a @click="changePage(page+1)" href="javascript:;">下一页</a>&nbsp;&nbsp;
+                    <a @click="changePage(12)" href="javascript:;">尾页</a>&nbsp;&nbsp;
+                    <span class="page_info">1/12</span>
+                </div>
+            </div>
+
+        </div>
+        <div v-show="3===number">
+            <div>
+                <h1>股票技术面和基本面详情信息：</h1>
+                <form @submit.prevent="submit" class="search-form">
+                    <input type="text" class="input" v-model="stockInfo" placeholder="请输入股票ID或名称">
+                    <button type="submit">搜 索</button>
+                </form>
+            </div>
+            <div v-html="pageInfo"></div>
+        </div>
+        <div v-show="5===number"><p>自选股票列表</p></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+
+    new Vue({
+        el: "#app",
+        data: {
+            number: 1,
+            listData: '',
+            page: 1,
+            stockInfo: '',
+            stockId: '',
+            pageInfo: ''
+        },
+        mounted: function () {
+            this.changePage(1);
+        },
+        methods: {
+            change: function (num) {
+                this.number = num
+            },
+            changePage: function (num) {
+                this.page = num
+                axios.get("http://localhost:8080/winners-list?page=" + this.page).then(
+                    (response) => {
+                        this.listData = response.data.data;
+                    },
+                    (err) => {
+                        console.error(err);
+                    }
+                )
+
+            },
+            searchId: function () {
+                if (isNaN(this.stockInfo)) {
+                    return axios.get("http://localhost:8080/searchId?name=" + this.stockInfo).then(
+                        (res) => {
+                            return res.data.data;
+                        }
+                    )
+
+                } else {
+                    return this.stockInfo;
+                }
+            },
+            submit: async function () {
+
+                var resp = await this.searchId();
+                this.stockId = resp;
+                console.log("submit函数： " + this.stockId);
+
+                // console.log("awdasdasd")
+                // axios.get("http://stockpage.10jqka.com.cn/" + this.stockInfo).then(
+                //     function (res) {
+                //         this.pageInfo = res.data.data;
+                //         console.log(this.pageInfo)
+                //     },
+                //     function (err) {
+                //         console.log(err)
+                //     }
+                // )
+                // window.location.href = "http://stockpage.10jqka.com.cn/" + this.stockInfo;
+
+            },
+            forward: function (id) {
+                window.location.href = "http://stockpage.10jqka.com.cn/" + id;
+
+            }
+
+        }
+    })
+
+</script>
+
+</body>
+</html>

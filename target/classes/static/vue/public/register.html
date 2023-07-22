@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("img.png");
+            background-repeat: revert;
+        }
+
+        #app {
+            display: flex;
+
+        }
+
+        .bottom-left {
+            color: #fff;
+            font-size: 15px;
+            opacity: .54;
+            margin-top: 850px;
+            margin-left: 70px;
+        }
+
+        .bottom-left a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .left-title {
+            margin-left: 100px;
+            margin-top: 250px;
+            color: white;
+        }
+
+        .left-title h3 {
+            font-size: 54px;
+        }
+
+        .left-title p {
+            line-height: 70px;
+            font-size: 32px;
+        }
+
+        .app-box {
+            margin-left: 650px;
+            margin-top: 130px;
+            height: 600px;
+            width: 480px;
+            background-color: #fff;
+            opacity: 0.9;
+            border-radius: 15px;
+        }
+
+        .app-box h1 {
+            font-size: 40px;
+            margin-top: 50px;
+            margin-left: 45px;
+        }
+
+        .title p {
+            margin-top: 10px;
+            margin-left: 45px;
+        }
+
+        .title a {
+            text-decoration: none;
+        }
+
+        .title a:hover {
+            text-decoration: underline;
+        }
+
+
+        .from-box {
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        .from-box label {
+            font-size: 18px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: right;
+            width: 82px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 15px;
+            font-weight: 200;
+            display: block;
+            float: left;
+
+            margin-bottom: 15px;
+
+        }
+
+        .from-box input {
+            padding: 11px 10px;
+            max-height: 40px;
+            background: #fff;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 311px;
+            transition: .3s;
+
+            margin-bottom: 15px;
+
+        }
+
+        .from-box button {
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 0;
+            font-size: 20px;
+            width: 399px;
+            height: 50px;
+            background: #BDCEFC;
+            border-radius: 25px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .from-box button:hover {
+            background: #c1bdfc;
+
+        }
+
+        .text-readed {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .text-readed a {
+            text-decoration: none;
+        }
+
+        .text-readed a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <div class="bottom-left">
+        <span>
+            <a href="https://passport.baidu.com/v2/?ucenterfeedback#reg">帮助中心&nbsp;&nbsp;</a>
+        </span>
+        <span>|</span>
+        <span>&nbsp;&nbsp;2023&nbsp;&nbsp;©Qifei</span>
+    </div>
+    <div class="left-title">
+        <h3>用科技</h3>
+        <p>让复杂的世界更简单</p>
+    </div>
+
+    <div class="app-box">
+        <div class="title">
+            <h1>欢迎注册</h1>
+            <p>已有账号？
+                <a href="http://localhost:8080/login.html">登陆</a>
+            </p>
+        </div>
+        <div class="from-box">
+            <form @submit.prevent="register">
+                <label for="newUsername">用户名:</label>
+                <input type="text" id="newUsername" v-model="registerData.username" placeholder=" 请设置用户名"><br><br>
+                <label for="newPassword">密码:</label>
+                <input type="password" id="newPassword" v-model="registerData.password"
+                       placeholder=" 请设置登陆密码"><br><br>
+                <label for="newPhone">手机号:</label>
+                <input type="text" id="newPhone" v-model="registerData.phone"
+                       placeholder=" 可用于登录和找回密码"><br><br>
+                <button type="submit">注册</button>
+            </form>
+            <br>
+            <div v-if="ifRedirect" v-cloak>{{ times }}秒后自动跳转到登陆页面...</div>
+
+
+        </div>
+        <div class="text-readed">
+            <p>
+                <input type="checkbox" v-model="readed">
+                <label>&nbsp;&nbsp;阅读并接受</label><a href="">&nbsp;《股市用户协议》</a>&nbsp;、<a
+                    href="">《个人信息保护声明》</a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;及</span>
+                <a href="">《隐私权保护声明》</a><span></span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            registerData: {
+                username: '',
+                password: '',
+                phone: '',
+            },
+            readed: false,
+            ifRedirect: false,
+            times: 2
+        },
+        methods: {
+            register: function () {
+                if (this.registerData.username.trim() === "") {
+                    alert("用户名不能为空!");
+                } else if (this.registerData.password.trim() === "") {
+                    alert("密码不能为空!");
+                } else if (this.registerData.phone.trim() === "") {
+                    alert("手机号不能为空!");
+                } else if (this.readed === false) {
+                    alert("请勾选用户协议!");
+                } else {
+                    var that = this;
+                    axios.put("http://localhost:8080/register", {
+                        username: this.registerData.username,
+                        password: this.registerData.password,
+                        phone: this.registerData.phone
+                    }).then(
+                        function (response) {
+                            alert("注册成功！")
+                            that.ifRedirect = true
+                            that.clear();
+
+                            const timer = setInterval(() => {
+                                that.times--;
+                                if (that.times === 0) {
+                                    window.location.href = "login.html"
+                                    clearInterval(timer);
+                                }
+                            }, 1000);
+
+                        },
+                        function (err) {
+                            alert("注册失败！用户名已存在！")
+                        }
+                    )
+                }
+            },
+            clear: function () {
+                this.registerData.username = '';
+                this.registerData.password = '';
+                this.registerData.phone = '';
+            }
+        }
+    })
+</script>
+</body>
+</html>
