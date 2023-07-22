@@ -253,12 +253,44 @@
       <workItem from="1689996092484" duration="65000" />
       <workItem from="1689997747238" duration="2160000" />
       <workItem from="1690007926165" duration="648000" />
-      <workItem from="1690013363019" duration="1043000" />
+      <workItem from="1690013363019" duration="1837000" />
     </task>
+    <task id="LOCAL-00001" summary="init stock-analysis-system">
+      <option name="closed" value="true" />
+      <created>1690014525434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690014525434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init stock-analysis-system">
+      <option name="closed" value="true" />
+      <created>1690014690863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690014690863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init stock-analysis-system" />
+    <option name="LAST_COMMIT_MESSAGE" value="init stock-analysis-system" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
