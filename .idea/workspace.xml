@@ -58,7 +58,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/IntelliJ IDEA/Project/Stock_analysis_system/src/main/resources/static/vue/utils",
+    "last_opened_file_path": "E:/IntelliJ IDEA/Project/system-utils/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,7 +69,7 @@
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "98cf41836aed02d1d7371d6e8347149b",
+    "spring.configuration.checksum": "ba872cae2e08a5760eb9885463b6abcf",
     "ts.external.directory.path": "E:\\IntelliJ IDEA\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -248,7 +248,8 @@
       <workItem from="1690007926165" duration="648000" />
       <workItem from="1690013363019" duration="1925000" />
       <workItem from="1690015299567" duration="31000" />
-      <workItem from="1690015340700" duration="25000" />
+      <workItem from="1690015340700" duration="160000" />
+      <workItem from="1690015511303" duration="407000" />
     </task>
     <task id="LOCAL-00001" summary="init stock-analysis-system">
       <option name="closed" value="true" />
@@ -274,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690015263104</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init stock-analysis-system">
+      <option name="closed" value="true" />
+      <created>1690015390292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690015390292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +294,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
